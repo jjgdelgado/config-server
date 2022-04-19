@@ -6,12 +6,6 @@ spring:
     url: 'r2dbc:postgresql://localhost:5432/localdb?schema=demo'
     username: 'postgres'
     password: 'password'
-
-logging:
-  level:
-    org:
-      springframework:
-        r2dbc: 'DEBUG'
-
+    
 server:
   port: 8003
