@@ -7,3 +7,15 @@ eureka:
     register-with-eureka: true
     serviceUrl:
       defaultZone: 'http://localhost:8002/eureka/'
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: currency-service
+          uri: lb://currency-service
+          predicates:
+            - Path=/api/currency/**
