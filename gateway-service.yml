@@ -15,7 +15,7 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: currency-service
-          uri: lb://currency-service
+        - id: currency-microservice
+          uri: lb://currency-microservice
           predicates:
-            - Path=/api/currency/**
+            - Path=/api/currencies/**
