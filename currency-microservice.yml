@@ -13,3 +13,8 @@ eureka:
       defaultZone: 'http://localhost:8002/eureka/'
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
+
+application:
+  http-client:
+    accounts:
+      base-url: 'http://localhost:8080/api/accounts'
