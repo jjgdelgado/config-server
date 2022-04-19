@@ -16,7 +16,7 @@ eureka:
 
 resilience4j.circuitbreaker:
   instances:
-    account-microservice-circuit:
+    account-microservice:
       registerHealthIndicator: true
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
