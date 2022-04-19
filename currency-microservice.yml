@@ -21,6 +21,7 @@ resilience4j.circuitbreaker:
       slidingWindowSize: 10
       permittedNumberOfCallsInHalfOpenState: 3
       slidingWindowType: TIME_BASED
+      recordFailurePredicate: io.github.robwin.exception.RecordFailurePredicate
 
 application:
   http-client:
