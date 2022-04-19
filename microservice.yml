@@ -1,6 +1,6 @@
 spring:
   application:
-    name: microservice
+    name: currency-microservice
     
   r2dbc:
     url: 'r2dbc:postgresql://localhost:5432/localdb?schema=demo'
