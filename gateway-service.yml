@@ -20,7 +20,7 @@ spring:
         - id: currency-microservice
           uri: lb://currency-microservice
           predicates:
-            - Path=/api/currencies/**
+            - Path=/currency/microservice/**
         - id: account-microservice
           uri: lb://account-microservice
           predicates:
