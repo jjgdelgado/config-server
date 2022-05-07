@@ -3,7 +3,7 @@ server:
 
 spring:
   r2dbc:
-    url: 'r2dbc:postgresql://localhost:5432/localdb?schema=demo'
+    url: 'r2dbc:postgresql://postgresdb:5432/localdb?schema=demo'
     username: 'postgres'
     password: 'password'
 
