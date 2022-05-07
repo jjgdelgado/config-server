@@ -10,11 +10,11 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: 'http://registry-server:8002/eureka/'
+      defaultZone: 'http://registry-service:8002/eureka/'
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance-id:${random.value}}
 
 application:
   http-client:
     account:
-      base-url: 'http://gateway-server:8080/api/accounts'
+      base-url: 'http://gateway-service:8080/api/accounts'
